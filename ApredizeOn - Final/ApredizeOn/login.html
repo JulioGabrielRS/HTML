@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial="1.0">
+    <title>AprendizeON - Login</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="tudo">
+    <div class="topo">
+        <div class="logoEscrita">
+            <img class="imagem" src="imagens/escrita.png">
+        </div>
+        <div class="logo">
+            <img class="imagem" src="imagens/logo.png">
+        </div>
+        <div class="menu">
+            <a href="sobre.html" target="_blank">Sobre nós</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="Cadastros/ensine.html">Ensine no AprendizeON</a>
+        </div>
+    </div>
+
+    <div class="corpo">
+        <div class="container">
+            <div class="cabecalho">
+                <h1>AprendizeON</h1>
+            </div>
+            <div class="formulario">
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+
+                    <a href="#" id="esqueciSenha">Esqueci minha senha</a>
+
+                    <button type="submit">Entrar</button>
+
+                    <p><a href="Cadastros/CriarUsuario.html">Criar usuário</a></p>
+                </form>
+                <div id="mensagem" class="mensagemEmail">
+                    Foi enviado um e-mail para redefinir sua senha.
+                    <button id="okButton">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

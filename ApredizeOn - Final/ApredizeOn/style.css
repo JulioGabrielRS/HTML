@@ -1,0 +1,283 @@
+/*Declarar variavel*/
+:root {
+  --viewport-height: 100vh;
+  --corPrimaria: #2528da;
+  --corLetra: #ffffff;
+  --corLetraRodape: #000000;
+  --larguraPadrao: 80%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--corPrimaria);
+}
+
+.container {
+  width: 450px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  top: 10px;
+  left: 0px;
+  position: relative;
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  padding: 20px;
+  left: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--corPrimaria);
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 305px;
+}
+
+a {
+  color: var(--corPrimaria);
+  text-decoration: none;
+}
+
+.logo{
+  width: 350px;
+  height: 350px;
+  position: absolute; 
+ }
+
+.logoEscrita{
+  width: 300px;
+  height: 50px;
+  top: 20px;
+  left: 250px;
+  position: absolute; 
+}
+
+.corpo{
+  width:90%;
+  margin:auto;
+}
+
+.tudo{
+width: 100%;
+height:var(--viewport-height);
+/* Define a imagem de fundo */
+background-image: url('imagens/homem.png');
+  
+/* Posiciona a imagem no canto inferior direito */
+background-position: right bottom;
+background-repeat: no-repeat;
+
+/* Define o tamanho do plano de fundo */
+background-size: 70%; /* Ajuste conforme necessário */
+
+}
+
+.topo{
+  width: 100%;
+  height: 175px;
+}
+
+.imagem{
+  width: 100%;
+}
+
+.rodape{
+  position: relative;
+  top: 50px;
+  background-color: #ffffff78;
+  height: 100%;
+  
+}
+
+.imagemLogo{
+  z-index: 0;
+  position: relative;
+  width: 20%;
+  height: 60px;
+}
+
+.menu {
+  position: relative;
+  right: 300px;
+  top: 20px;
+  display: flex;
+  justify-content: flex-end; /* Alinha os itens do menu à direita */
+  padding: 10px 20px; /* Espaçamento interno do menu */
+}
+
+.menu a {
+  color: white; /* Cor do texto dos links */
+  padding: 14px 20px; /* Espaçamento ao redor dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-size: 20px; /* Tamanho da fonte */
+}
+
+.menu a:hover {
+  color: #ccc; /* Muda a cor do texto ao passar o mouse */
+}
+
+/*CSS de sobre*/
+
+.estilo{
+  position: relative;
+  top: 175px;
+  text-align: justify;
+  width: 100%;
+}
+
+.escrita {
+  position: relative;
+  top: -150px;
+  width: 80%;
+  color: var(--corLetra);
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--corLetra);
+}
+
+header p {
+  font-size: 18px;
+  color: var(--corLetra);
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--corLetra);
+}
+
+section p {
+  font-size: 16px;
+  color: var(--corLetra);
+  line-height: 1.5;
+}
+
+section ul {
+  top: 20;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 16px;
+  color: var(--corLetra);
+  line-height: 1.5;
+}
+
+li {
+  font-size: 16px;
+  color: var(--corLetra);
+  line-height: 1.5;
+}
+
+header p, section p, footer p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify; /* Justifica o texto */
+  color: var(--corLetra);
+}
+
+.homem {
+  width: 70%; /* 80% da largura da tela */
+  height: 80vh; /* Altura da viewport */
+    background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajusta a imagem para caber no contêiner */
+  position: fixed; /* Fixa a imagem durante a rolagem */
+  bottom: 0;
+  right: 0;
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+.fixed {
+  background-attachment: fixed;
+}
+
+.container_cursos{
+  max-width: 60%;
+  margin: auto;
+  background: #ffffffa7;
+  padding: 20px 40px;;
+  box-shadow: 0 0 10px rgba(243, 241, 241, 0.505);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.course {
+  text-align: center;
+  width: calc(40% - 20px); /* Largura dos cursos, com espaço entre eles */
+  margin: 20px;
+  background: #ffffffa7;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(9, 16, 226, 0.533);
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align:auto; /* Alinha as caixas pela parte superior */
+  box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+.escritaRodape{
+  
+  font-family: sans-serif, var(--corLetraRodape);
+  position: relative;
+  margin-top: 40px;
+}
+
+#mensagem {
+  display: none;
+  background-color: #f8f8f8;
+  border: 10px solid #0025e0;
+  padding: 38px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 9999; /* Garante que a mensagem fique sobre outros elementos */
+}
+
+#okButton {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
